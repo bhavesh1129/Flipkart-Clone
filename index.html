@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books &amp; More. Best Offers!
+    </title>
+
+    <!-- Flaticon Link -->
+    <link rel="icon" href="https://img1a.flixcart.com/www/promos/new/20150528-140547-favicon-retina.ico">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <!-- Tailwind CSS -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- External CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar w-full h-16 bg-blue-600 flex items-center justify-content-center object-fit-contain">
+
+        <!-- Logo -->
+        <a href="./index.html">
+            <div class="logo">
+                <img class="logo-image h-8 w-28 ml-40 cursor-pointer" src="./Images/Logo.png" alt="Logo">
+            </div>
+        </a>
+
+        <!-- Search Bar -->
+        <div class="search-box flex items-center justify-content-center m-4 w-2/5 shadow-2xl">
+            <input type="text" class="bg-white border-opacity-75 font-normal placeholder-gray-500 cursor-pointer 
+            focus:outline-none p-4 h-10 w-full rounded-l-sm text-gray-800" placeholder="Search for products, brands and more">
+
+            <!-- Search Icon -->
+            <div class="search-icon h-10 w-10 rounded-r-sm bg-white flex items-center justify-content-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 pl-0 ml-0 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+            </div>
+        </div>
+
+        <!-- Right Side Elements -->
+        <div class="right-side flex items-center justify-content-center">
+
+            <!-- User -->
+            <div class="dropdown relative inline-block">
+                <div class="dropbtn user ml-20 cursor-pointer flex items-center justify-center text-lg text-white font-bold">
+                    Bhavesh
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </div>
+
+                <!-- Dropdown Menu for User -->
+                <div class="dropdown-content hidden absolute bg-white shadow-2xl text-black no-underline">
+                    <a href="#"><i class="far fa-user-circle"></i>My Profile</a>
+                    <a href="#"><i class="fas fa-search-dollar"></i>SuperCoin Zone</a>
+                    <a href="#"><i class="fas fa-award"></i>Flipkart Plus Zone</a>
+                    <a href="#"><i class="fas fa-box-open"></i>Orders</a>
+                    <a href="#"><i class="fas fa-heart"></i>Wishlists</a>
+                    <a href="#"><i class="far fa-comment-alt"></i>My Chats</a>
+                    <a href="#"><i class="far fa-money-bill-alt"></i>Coupons</a>
+                    <a href="#"><i class="fas fa-gift"></i>Gift Cards</a>
+                    <a href="#"><i class="far fa-bell"></i>Notifications</a>
+                    <a href="#"><i class="fas fa-sign-out-alt"></i>Logout</a>
+                </div>
+            </div>
+
+            <!-- More Option -->
+            <div class="dropdown relative inline-block">
+                <div class="more dropbtn cursor-pointer ml-16 flex items-center justify-center text-lg text-white font-bold">
+                    More
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </div>
+
+                <!-- Dropdown Menu for More -->
+                <div class="dropdown-content hidden absolute bg-white shadow-2xl text-black no-underline ">
+                    <a href="#"><i class="fas fa-bell"></i>Notifications Preferences</a>
+                    <a href="#"><i class="fas fa-briefcase"></i>Sell on Flipkart</a>
+                    <a href="#"><i class="far fa-question-circle"></i>Customer Support</a>
+                    <a href="#"><i class="fas fa-chart-line"></i>Advertise</a>
+                    <a href="#"><i class="fas fa-download"></i>Download App</a>
+                </div>
+            </div>
+
+            <!-- Cart -->
+            <div class="relative cursor-pointer cart ml-16 flex items-center justify-content-center text-white font-bold text-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 20 20" fill="currentColor">
+                    <path
+                        d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                </svg>
+
+                <!-- Cart Item CAOUNT -->
+                <div class="cart-num absolute h-4 w-4 rounded-full border border-white bg-red-500 -top-1 text-xs text-white flex items-center justify-center">
+                    1</div>Cart
+            </div>
+        </div>
+    </nav>
+
+    <!-- Categories Bar -->
+    <header class="categories-bar">
+        <div class="categories flex flex-wrap items-center justify-content-around p-3 border shadow-lg">
+
+            <!-- Mobile -->
+            <div class="mobile mx-9 flex flex-col items-center justify-center cursor-pointer">
+                <img class="w-20 h-20 rounded-full" src="https://rukminim1.flixcart.com/flap/128/128/image/41735aded44a11a2.jpg?q=100" alt="Mobile">
+                <h3 class="font-medium hover:text-blue-500">Mobiles</h3>
+            </div>
+
+            <!-- Fashion -->
+            <div class="fashion mx-9 flex flex-col items-center justify-center cursor-pointer">
+                <img class="w-20 h-20 rounded-full" src="https://rukminim1.flixcart.com/flap/128/128/image/1dfca1558f649fc3.jpg?q=100" alt="Fashion">
+                <h3 class="font-medium hover:text-blue-500">Fashion</h3>
+            </div>
+
+            <!-- Electronics -->
+            <div class="electronics mx-9 flex flex-col items-center justify-center cursor-pointer">
+                <img class="w-20 h-20 rounded-full" src="https://rukminim1.flixcart.com/flap/128/128/image/929c19aa238c1ed5.jpg?q=100" alt="Electronics">
+                <h3 class="font-medium hover:text-blue-500">Electronics</h3>
+            </div>
+
+            <!-- Home -->
+            <div class="home mx-9 flex flex-col items-center justify-center cursor-pointer">
+                <img class="w-20 h-20 rounded-full" src="https://rukminim1.flixcart.com/flap/128/128/image/40f9e12bcef2472f.jpg?q=100" alt="home">
+                <h3 class="font-medium hover:text-blue-500">Home</h3>
+            </div>
+
+            <!-- Appliances -->
+            <div class="appliances mx-9 flex flex-col items-center justify-center cursor-pointer">
+                <img class="w-20 h-20 rounded-full" src="https://rukminim1.flixcart.com/flap/128/128/image/f9002812e5673020.jpg?q=100" alt="appliances">
+                <h3 class="font-medium hover:text-blue-500">Appliances</h3>
+            </div>
+
+            <!-- Travel -->
+            <div class="travel mx-9 flex flex-col items-center justify-center cursor-pointer">
+                <img class="w-20 h-20 rounded-full" src="https://rukminim1.flixcart.com/flap/128/128/image/a7367070e1d78018.jpg?q=100" alt="travel">
+                <h3 class="font-medium hover:text-blue-500">Travel</h3>
+            </div>
+
+            <!-- Beauty,Toys -->
+            <div class="beauty-toys mx-9 flex flex-col items-center justify-center cursor-pointer">
+                <img class="w-20 h-20 rounded-full" src="https://rukminim1.flixcart.com/flap/128/128/image/6cd38f9cbe1261ce.jpg?q=100" alt="beauty-toys">
+                <h3 class="font-medium hover:text-blue-500">Beauty,Toys</h3>
+            </div>
+
+            <!-- Furniture -->
+            <div class="furniture mx-9 flex flex-col items-center justify-center cursor-pointer">
+                <img class="w-20 h-20 rounded-full" src="https://rukminim1.flixcart.com/flap/128/128/image/5da6e24591c5ebcf.jpg?q=100" alt="furniture">
+                <h3 class="font-medium hover:text-blue-500">Furniture</h3>
+            </div>
+
+            <!-- Grocery -->
+            <div class="grocery mx-9 flex flex-col items-center justify-center cursor-pointer">
+                <img class="w-20 h-20 rounded-full" src="https://rukminim1.flixcart.com/flap/128/128/image/5c9cee8c470ab852.jpg?q=100" alt="grocery">
+                <h3 class="font-medium hover:text-blue-500">Grocery</h3>
+            </div>
+        </div>
+    </header>
+
+    <!--Display Carousel -->
+    <div class="carousel">
+        <div class="carousel-container m-3 shadow-lg cursor-pointer">
+            <img class="carousel-image w-full h-72" src="https://cdn.static-zoutons.com/images/originals/blog/1601996072164.jpg_1601996073.png" alt="Carousel" />
+        </div>
+    </div>
+
+    <!-- Top Deals -->
+    <section class="top-deals">
+        <div class="m-3 h-96 shadow-xl flex">
+
+            <!-- Left Side -->
+            <!-- <div class="left-side-deals flex flex-col items-center w-56">
+                <h1 class="pt-24 p-3 pb-8 text-3xl font-medium text-center mt-10">Top Offers</h1>
+                <button class="bg-blue-500 text-sm text-white font-medium py-2 px-4 rounded-sm">VIEW ALL</button>
+                <div class="mt-2 h-full w-full bg-blue-600"></div>
+            </div> -->
+
+            <div class="left-side-deals flex m-16">
+
+                <!-- Deal 1 -->
+                <div class="top-deals-container px-3 pl-0 flex flex-col items-center cursor-pointer">
+                    <img class="w-64 transition duration-500 ease-in-out transform hover:scale-110" src="https://rukminim1.flixcart.com/image/400/400/kp4difk0/television/y/z/0/l40m6-ei-mi-original-imag3fbyhsdgxxke.jpeg?q=70" alt="Image">
+                    <h1 class="deal-type font-medium pt-6">Blockbuster Launches</h1>
+                    <h1 class="deal-price text-green-600 pt-2">₹13,499</h1>
+                    <h1 class="deal-description text-gray-400 pt-2">Blaupaunt, oneplus & more</h1>
+                </div>
+
+                <!-- Deal 2 -->
+                <div class="top-deals-container px-3 flex flex-col items-center cursor-pointer">
+                    <img class="w-60 transition duration-500 ease-in-out transform hover:scale-110" src="https://rukminim1.flixcart.com/image/400/400/kk2wl8w0/computer/z/u/5/hp-original-imafzgdgcbtxvjka.jpeg?q=70" alt="Image">
+                    <h1 class="deal-type font-medium pt-6">Best deals on HP</h1>
+                    <h1 class="deal-price text-green-600 pt-2">From ₹21,990</h1>
+                    <h1 class="deal-description text-gray-400 pt-2">Upto 6 months NCEMI</h1>
+                </div>
+
+                <!-- Deal 3 -->
+                <div class="top-deals-container px-3 flex flex-col items-center cursor-pointer">
+                    <img class="w-56 transition duration-500 ease-in-out transform hover:scale-110" src="https://rukminim1.flixcart.com/image/400/400/klcmoi80/computer/q/e/3/na-gaming-laptop-acer-original-imagyhwfgwhkf3vv.jpeg?q=70" alt="Image">
+                    <h1 class="deal-type font-medium pt-6">Best Gaming Deals</h1>
+                    <h1 class="deal-price text-green-600 pt-2">From ₹49,990</h1>
+                    <h1 class="deal-description text-gray-400 pt-2">Acer, HP, Asus & More</h1>
+                </div>
+
+                <!-- Deal 4 -->
+                <div class="top-deals-container px-3 flex flex-col items-center cursor-pointer">
+                    <img class="w-56 transition duration-500 ease-in-out transform hover:scale-110" src="https://rukminim1.flixcart.com/image/400/400/camera/c/h/h/sony-cyber-shot-dsc-h300-advance-point-and-shoot-original-imadpzjmc3hwsnf7.jpeg?q=70" alt="Image">
+                    <h1 class="deal-type font-medium pt-8">Point & Shoot Cameras</h1>
+                    <h1 class="deal-price text-green-600 pt-2">From ₹6,999</h1>
+                    <h1 class="deal-description text-gray-400 pt-2">Sony, Olympus & more</h1>
+                </div>
+            </div>
+
+            <!-- Special Deal -->
+            <div class="right-side-deals cursor-pointer">
+                <img class="h-96 w-80" src="https://rukminim1.flixcart.com/flap/464/708/image/26545933c0f71de7.jpg?q=70" alt="Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Offers Cards -->
+    <section class="top-offers">
+
+        <!-- Row 1 -->
+        <div class="top-offers-row h-72 flex m-3">
+
+            <!-- Card 1 -->
+            <div class="offer-cards mr-2 shadow-2xl p-2 border-2 cursor-pointer">
+                <img class="h-full w-full" src="https://i.gadgets360cdn.com/large/Crazy-Deals-On-Flipkart-Big-Billion-Days-Sale-2020-1602708968026.jpg" alt="Image">
+            </div>
+
+            <!-- Card 2 -->
+            <div class="offer-cards mr-2 shadow-2xl p-2 border-2 cursor-pointer">
+                <img class="h-full w-full" src=" https://storiesflistgv2.blob.core.windows.net/stories/2017/10/smartphonediwali_mainbanner.jpg" alt="Image">
+            </div>
+
+            <!-- Card 3 -->
+            <div class="offer-cards shadow-2xl p-2 border-2 cursor-pointer">
+                <img class="h-full w-full" src="https://gadgetgig.com/wp-content/uploads/2019/07/Realme-3i-2.jpg" alt="Image">
+            </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="top-offers-row h-72 flex m-3">
+
+            <!-- Card 1 -->
+            <div class="offer-cards mr-2 shadow-2xl p-2 border-2 cursor-pointer">
+                <img class="h-full w-full" src="  https://www.dealsshutter.com/uploads/social_images/stores/1526627282-flipkart-coupons.png" alt="Image">
+            </div>
+
+            <!-- Card 2 -->
+            <div class="offer-cards mr-2 shadow-2xl p-2 border-2 cursor-pointer">
+                <img class="h-full w-full" src="https://www.alltechmashup.com/wp-content/uploads/2016/10/Flipkart-special-preview-offers.png" alt="Image">
+            </div>
+
+            <!-- Card 3 -->
+            <div class="offer-cards shadow-2xl p-2 border-2 cursor-pointer">
+                <img class="h-full w-full" src="https://i.gadgets360cdn.com/large/Flipkart-Big-Saving-Days-1616496898788.jpg" alt="Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Fashion Deals -->
+    <section class="top-deals">
+        <div class="m-3 h-96 shadow-xl flex border">
+            <!-- Left Side -->
+            <div class="left-side-deals flex flex-col items-center">
+                <h1 class="pt-24 p-3 pb-8 text-3xl font-medium text-center">Today's Fashion Deals</h1>
+                <button class="bg-blue-500 text-white font-medium py-2 px-5 rounded-sm">VIEW ALL</button>
+                <div class="mt-2 h-full w-full bg-blue-600"></div>
+            </div>
+
+            <!-- Right Side Deals -->
+            <div class="right-side-deals flex m-10">
+
+                <!-- Deal 1 -->
+                <div class="top-deals-container pl-0 flex flex-col items-center cursor-pointer">
+                    <img class="h-52 transition duration-500 ease-in-out transform hover:scale-110" src="https://rukminim1.flixcart.com/image/400/400/knexksw0/sari/y/w/0/free-5247-465-2d-ol-sf-mimosa-unstitched-original-imag23qe3dhacym4.jpeg?q=70" alt="Image">
+                    <h1 class="deal-type font-medium pt-2">Festive Sarees</h1>
+                    <h1 class="deal-price text-green-600 pt-2">Min. 80 Off</h1>
+                    <h1 class="deal-description text-gray-400 pt-2">Saara, Divastri & More</h1>
+                </div>
+
+                <!-- Deal 2 -->
+                <div class="top-deals-container px-5 flex flex-col items-center cursor-pointer">
+                    <img class="h-48 transition duration-500 ease-in-out transform hover:scale-110" src="https://rukminim1.flixcart.com/image/400/400/k3xcdjk0pkrrdj/ethnic-set/x/8/t/2xl-yellow-ya3476-aks-ya3476-xxl-original-imafgryyescvqxjd.jpeg?q=70" alt="Image">
+                    <h1 class="deal-type font-medium pt-6">Saara, Libas</h1>
+                    <h1 class="deal-price text-green-600 pt-2">60-80% Off</h1>
+                    <h1 class="deal-description text-gray-400 pt-2">Kurta, Sets</h1>
+                </div>
+
+                <!-- Deal 3 -->
+                <div class="top-deals-container px-5 flex flex-col items-center cursor-pointer">
+                    <img class="h-48 transition duration-500 ease-in-out transform hover:scale-110" src="https://rukminim1.flixcart.com/image/400/400/jvo4scw0/suitcase/a/v/n/stealth-55-4w-electric-blue-stealth554webl-cabin-luggage-safari-original-imafggtjhzypgbrj.jpeg?q=70"
+                        alt="Image">
+                    <h1 class="deal-type font-medium pt-6">Top Deals on Suitcase</h1>
+                    <h1 class="deal-price text-green-600 pt-2">60-80% Off</h1>
+                    <h1 class="deal-description text-gray-400 pt-2">Safari, Skybags</h1>
+                </div>
+
+                <!-- Deal 4 -->
+                <div class="top-deals-container px-5 flex flex-col items-center cursor-pointer">
+                    <img class="h-48 transition duration-500 ease-in-out transform hover:scale-110" src="https://rukminim1.flixcart.com/image/400/400/juljwcw0/backpack/m/p/y/twing-backpack-02-red-fd0-0-00-002-backpack-american-tourister-original-imaffzb75ky52msg.jpeg?q=70"
+                        alt="Image">
+                    <h1 class="deal-type font-medium pt-6">Backpacks</h1>
+                    <h1 class="deal-price text-green-600 pt-2">Min 70% Off</h1>
+                    <h1 class="deal-description text-gray-400 pt-2">Skybags, American Tourister</h1>
+                </div>
+
+                <!-- Deal 5 -->
+                <div class="top-deals-container px-5 flex flex-col items-center cursor-pointer">
+                    <img class="h-48 transition duration-500 ease-in-out transform hover:scale-110" src="https://rukminim1.flixcart.com/image/400/400/jua4djk0/watch/z/y/t/usat0154-u-s-polo-assn-original-imaffg67vgp8nfqz.jpeg?q=70" alt="Image">
+                    <h1 class="deal-type font-medium pt-6">Casio, Titan, Fastrack</h1>
+                    <h1 class="deal-price text-green-600 pt-2">10-50% Off</h1>
+                    <h1 class="deal-description text-gray-400 pt-2">Massive Savings!</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Offers Cards -->
+    <section class="top-offers">
+
+        <!-- Row 1 -->
+        <div class="top-offer-row m-3 p-3">
+            <h1 class="font-medium text-2xl pb-5 pl-1">Upcoming Launches</h1>
+            <div class="flex">
+                <!-- Card 1 -->
+                <div class="offer-cards mr-2 shadow-2xl p-2 border cursor-pointer">
+                    <img class="h-full w-full" src="https://www.mobiles.co.uk/blog/content/images/2020/10/banner-7.jpg" alt="Image">
+                </div>
+
+                <!-- Card 2 -->
+                <div class="offer-cards mr-2 shadow-2xl p-2 border cursor-pointer">
+                    <img class="h-full w-full" src="http://gadgetstouse.com/wp-content/uploads/2014/05/image80.png" alt="Image">
+                </div>
+
+                <!-- Card 3 -->
+                <div class="offer-cards shadow-2xl p-2 border cursor-pointer">
+                    <img class="h-full w-full" src="https://www.on-mag.fr/images/stories/2019/06/Bose-Headphone-700-noir.jpg" alt="Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Brand -->
+    <section class="feature-brands">
+        <div class="">
+            <div class="feature-cards-row flex m-3">
+
+                <!-- Card 1 -->
+                <div class="offer-cards mr-2 shadow-2xl p-2 border-2 cursor-pointer">
+                    <img class="transition ease-in-out duration-500 transform hover:scale-105" src="https://rukminim1.flixcart.com/flap/960/960/image/280f4c9921a571d5.png?q=50" alt="Image">
+                </div>
+
+                <!-- Card 2 -->
+                <div class="offer-cards mr-2 shadow-2xl p-2 border-2 cursor-pointer">
+                    <img class="transition duration-500 ease-in-out transform hover:scale-105" src="https://rukminim1.flixcart.com/flap/960/960/image/084789479074d2b2.jpg?q=50" alt="Image">
+                </div>
+
+                <!-- Card 3 -->
+                <div class="offer-cards shadow-2xl p-2 border-2 cursor-pointer">
+                    <img class="transition duration-500 ease-in-out transform hover:scale-105" src="https://rukminim1.flixcart.com/flap/960/960/image/1ce0c4c1fb501b45.jpg?q=50" alt="Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Electronics and Accersories Deals -->
+    <section class="top-deals">
+        <div class="m-3 h-96 shadow-xl flex border">
+
+            <!-- Left Side -->
+            <div class="left-side-deals flex flex-col items-center w-72">
+                <h1 class="pt-24 p-3 pb-8 text-3xl font-medium text-center">Electronics and Accersories</h1>
+                <button class="bg-blue-500 text-white font-medium py-2 px-5 rounded-sm">VIEW ALL</button>
+                <div class="mt-2 h-full w-full bg-yellow-500"></div>
+            </div>
+
+            <!-- Right Side Deals -->
+            <div class="right-side-deals flex m-10">
+
+                <!-- Deal 1 -->
+                <div class="top-deals-container pl-0 flex flex-col items-center cursor-pointer mr-3">
+                    <img class="w-56 pt-10 transition duration-500 ease-in-out transform hover:scale-110" src="https://rukminim1.flixcart.com/image/400/400/kn4xhu80/tablet/8/c/6/sm-t500nzdginu-samsung-original-imagfvsdmm6cxnxa.jpeg?q=70" alt="Image">
+                    <h1 class="deal-type font-medium pt-14">Top 20 Tablets</h1>
+                    <h1 class="deal-price text-green-600 pt-2">Upto 45% Off</h1>
+                    <h1 class="deal-description text-gray-400 pt-2">Best Sellers | Top Deals</h1>
+                </div>
+
+                <!-- Deal 2 -->
+                <div class="top-deals-container px-7 flex flex-col items-center cursor-pointer mr-3">
+                    <img class="w-64 pt-14 transition duration-500 ease-in-out transform hover:scale-110" src="https://rukminim1.flixcart.com/image/400/400/k76ihe80/projector/p/5/d/eg-i9-black-8908947019005-egate-original-imafpgyzh3pwyyze.jpeg?q=70" alt="Image">
+                    <h1 class="deal-type font-medium pt-16">Top 10 Projectors</h1>
+                    <h1 class="deal-price text-green-600 pt-2">Upto 60% Off</h1>
+                    <h1 class="deal-description text-gray-400 pt-2">Egate, Acer & More</h1>
+                </div>
+
+                <!-- Deal 3 -->
+                <div class="top-deals-container px-7 flex flex-col items-center cursor-pointer mr-3">
+                    <img class="w-48 pt-8 transition duration-500 ease-in-out transform hover:scale-110" src="https://rukminim1.flixcart.com/image/400/400/jruyikw0/dslr-camera/k/r/g/alpha-a6400-a6400-ilce-6400m-sony-original-imafdj6q77w946sb.jpeg?q=70" alt="Image">
+                    <h1 class="deal-type font-medium pt-5">Top 20 Cameras</h1>
+                    <h1 class="deal-price text-green-600 pt-2">From ₹3,799</h1>
+                    <h1 class="deal-description text-gray-400 pt-2">DSLRs, Action & Digital</h1>
+                </div>
+
+                <!-- Deal 4 -->
+                <div class="top-deals-container px-7 flex flex-col items-center cursor-pointer">
+                    <img class="w-24 transition duration-500 ease-in-out transform hover:scale-110" src="https://rukminim1.flixcart.com/image/400/400/khcb7gw0/power-bank/n/m/w/power-bank-10000-p102a-oneplus-original-imafxdnaqwchyqnx.jpeg?q=70" alt="Image">
+                    <h1 class="deal-type font-medium pt-10">PowerBanks</h1>
+                    <h1 class="deal-price text-green-600 pt-2">Just ₹999</h1>
+                    <h1 class="deal-description text-gray-400 pt-2">18W Fast Charging</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Price Categories -->
+    <section class="price-categories">
+        <div class="price-cards-row flex m-3">
+
+            <!-- Price Category 1 -->
+            <div class="price-cards p-2">
+                <div class="price-content rounded-lg cursor-pointer bg-yellow-500 w-80 h-36 flex flex-col items-center justify-center">
+                    <h1 class="text-white font-medium text-3xl">UNDER</h1>
+                    <h1 class="relative text-white text-6xl font-bold tracking-wide"><span class="text-4xl top-0 -left-5 absolute">₹</span>299</h1>
+                </div>
+            </div>
+
+            <!-- Price Category 2 -->
+            <div class="price-cards p-2 ml-3">
+                <div class="price-content rounded-lg cursor-pointer bg-yellow-500 w-80 h-36 flex flex-col items-center justify-center">
+                    <h1 class="text-white font-medium text-3xl">UNDER</h1>
+                    <h1 class="relative text-white text-6xl font-bold tracking-wide"><span class="text-4xl top-0 -left-5 absolute">₹</span>499</h1>
+                </div>
+            </div>
+
+            <!-- Price Category 3 -->
+            <div class="price-cards p-2 ml-3">
+                <div class="price-content rounded-lg cursor-pointer bg-yellow-500 w-80 h-36 flex flex-col items-center justify-center">
+                    <h1 class="text-white font-medium text-3xl">UNDER</h1>
+                    <h1 class="relative text-white text-6xl font-bold tracking-wide"><span class="text-4xl top-0 -left-5 absolute">₹</span>599</h1>
+                </div>
+            </div>
+
+            <!-- Price Category 4 -->
+            <div class="price-cards p-2 ml-3">
+                <div class="price-content rounded-lg cursor-pointer bg-yellow-500 w-80 h-36 flex flex-col items-center justify-center">
+                    <h1 class="text-white font-medium text-3xl">UNDER</h1>
+                    <h1 class="relative text-white text-6xl font-bold tracking-wide"><span class="text-4xl top-0 -left-5 absolute">₹</span>699</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Brands Cards -->
+    <section class="top-offers">
+
+        <!-- Row 1 -->
+        <div class="top-offer-row m-3 p-3">
+            <h1 class="font-medium text-2xl pb-5 pl-1">Featured Brands</h1>
+            <div class="flex">
+                <!-- Card 1 -->
+                <div class="offer-cards mr-2 shadow-2xl p-2 border cursor-pointer">
+                    <img class="h-full transition duration-500 ease-in-out transform hover:scale-105" src="https://m.media-amazon.com/images/S/aplus-media/vc/32a2f8b6-b254-48ae-a544-40bf47de32b1.__CR0,0,970,600_PT0_SX970_V1___.jpg" alt="Image">
+                </div>
+
+                <!-- Card 2 -->
+                <div class="offer-cards mr-2 shadow-2xl p-2 border cursor-pointer">
+                    <img class="transition duration-500 ease-in-out transform hover:scale-105" src="https://img.global.news.samsung.com/in/wp-content/uploads/2018/07/3.jpg" alt="Image">
+                </div>
+
+                <!-- Card 3 -->
+                <div class="offer-cards shadow-2xl p-2 border cursor-pointer">
+                    <img class="h-full w-full transition duration-500 ease-in-out transform hover:scale-105" src="https://i.pinimg.com/originals/86/d7/09/86d709ecf887d4c1f81a44ff40b521f6.png" alt="Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discounts For You -->
+    <section class="top-deals">
+        <div class="m-3 h-96 shadow-xl flex border">
+
+            <!-- Left Side -->
+            <div class="left-side-deals flex flex-col items-center w-60">
+                <h1 class="pt-24 p-3 pb-8 text-3xl font-medium text-center">Discount For You</h1>
+                <button class="bg-blue-500 text-white font-medium py-2 px-5 rounded-sm">VIEW ALL</button>
+                <div class="mt-2 h-full w-full bg-blue-500"></div>
+            </div>
+
+            <!-- Right Side Deals -->
+            <div class="right-side-deals flex m-10">
+
+                <!-- Deal 1 -->
+                <div class="top-deals-container pl-0 flex flex-col items-center cursor-pointer mr-2">
+                    <img class="h-52 pt-3 transition duration-500 ease-in-out transform hover:scale-110" src="https://rukminim1.flixcart.com/image/400/400/ji20r680/external-hard-drive/hdd/v/r/e/wd-wdbhdw0030bbk-eesn-original-imaf5xsfgsvuxuph.jpeg?q=70" alt="Image">
+                    <h1 class="deal-type font-medium pt-5">External Hard Disks</h1>
+                    <h1 class="deal-price text-green-600 pt-2">Min 30% Off</h1>
+                    <h1 class="deal-description text-gray-400 pt-2">Great Savings!</h1>
+                </div>
+
+                <!-- Deal 2 -->
+                <div class="top-deals-container px-7 flex flex-col items-center cursor-pointer mr-2">
+                    <img class="w-44 pt-3 transition duration-500 ease-in-out transform hover:scale-110" src="https://rukminim1.flixcart.com/image/400/400/kmwcuq80/shoe/w/u/s/7-444-gry-org-bruton-orange-original-imagfp7fzz5ftzfc.jpeg?q=70" alt="Image">
+                    <h1 class="deal-type font-medium pt-7">Footwear</h1>
+                    <h1 class="deal-price text-green-600 pt-2">Min 60% Off</h1>
+                    <h1 class="deal-description text-gray-400 pt-2">Hurry, Don't Miss Out!</h1>
+                </div>
+
+                <!-- Deal 3 -->
+                <div class="top-deals-container px-7 flex flex-col items-center cursor-pointer mr-2">
+                    <img class="w-32 pt-2 transition duration-500 ease-in-out transform hover:scale-110" src="https://rukminim1.flixcart.com/image/400/400/kkprmvk0/smartwatch/v/j/n/storm-android-ios-boat-original-imafzzu29tguvtqg.jpeg?q=70" alt="Image">
+                    <h1 class="deal-type font-medium pt-3">Smart Watches</h1>
+                    <h1 class="deal-price text-green-600 pt-2">Upto 40% Off</h1>
+                    <h1 class="deal-description text-gray-400 pt-2">Explore Now!</h1>
+                </div>
+
+                <!-- Deal 4 -->
+                <div class="top-deals-container px-7 flex flex-col items-center cursor-pointer mr-2">
+                    <img class="w-44 pt-7 transition duration-500 ease-in-out transform hover:scale-110" src="https://rukminim1.flixcart.com/image/400/400/ke7ff680/memory-card/microsdxc/p/x/z/samsung-mb-mc64ha-in-original-imafuxz4kcvxthtz.jpeg?q=70" alt="Image">
+                    <h1 class="deal-type font-medium pt-20">Memory Cards</h1>
+                    <h1 class="deal-price text-green-600 pt-2">Min 40% Off</h1>
+                    <h1 class="deal-description text-gray-400 pt-2">Grab Now!</h1>
+                </div>
+
+                <!-- Deal 5 -->
+                <div class="top-deals-container px-7 flex flex-col items-center cursor-pointer">
+                    <img class="w-44 pt-7 transition duration-500 ease-in-out transform hover:scale-110" src=" https://rukminim1.flixcart.com/image/400/400/kqpj4i80/battery-charger/y/8/c/mdy-10-er-mi-original-imag4nughk2vxehg.jpeg?q=70" alt="Image">
+                    <h1 class="deal-type font-medium pt-4">Wall Chargers</h1>
+                    <h1 class="deal-price text-green-600 pt-2">Min 50% Off</h1>
+                    <h1 class="deal-description text-gray-400 pt-2">Shop Now!</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom Content -->
+    <section class="bottom-description mt-16">
+        <div class="full-content text-xs text-gray-400 bg-gray-100 border-t border-black">
+            <!-- Content 1 -->
+            <div class="content-1 p-5 pb-0">
+                <h1 class="font-bold text-lg text-gray-500 mb-3">Flipkart: The One-stop Shopping Destination</h1>
+                <p class="mb-3">E-commerce is revolutionizing the way we all shop in India. Why do you want to hop from one store to another in search of the latest phone when you can find it on the Internet in a single click? Not only mobiles. Flipkart houses everything
+                    you can possibly imagine, from trending electronics like laptops, tablets, smartphones, and mobile accessories to in-vogue fashion staples like shoes, clothing and lifestyle accessories; from modern furniture like sofa sets, dining
+                    tables, and wardrobes to appliances that make your life easy like washing machines, TVs, ACs, mixer grinder juicers and other time-saving kitchen and small appliances; from home furnishings like cushion covers, mattresses and bedsheets
+                    to toys and musical instruments, we got them all covered. You name it, and you can stay assured about finding them all here. For those of you with erratic working hours, Flipkart is your best bet. Shop in your PJs, at night or in the
+                    wee hours of the morning. This e-commerce never shuts down.</p>
+                <p>What's more, with our year-round shopping festivals and events, our prices are irresistible. We're sure you'll find yourself picking up more than what you had in mind. If you are wondering why you should shop from Flipkart when there are
+                    multiple options available to you, well, the below will answer your question.</p>
+            </div>
+
+            <!-- Content 2 -->
+            <div class="content-2 p-5 pb-0">
+                <h1 class="font-bold text-lg text-gray-500 mb-3">Flipkart Plus</h1>
+                <p>A world of limitless possibilities awaits you - Flipkart Plus was kickstarted as a loyalty reward programme for all its regular customers at zero subscription fee. All you need is 500 supercoins to be a part of this service. For every
+                    100 rupees spent on Flipkart order, Plus members earns 4 supercoins & non-plus members earn 2 supercoins. Free delivery, early access during sales and shopping festivals, exchange offers and priority customer service are the top benefits
+                    to a Flipkart Plus member. In short, earn more when you shop more!</p>
+                <p>What's more, you can even use the Flipkart supercoins for a number of exciting services, like:
+                    <ul>
+                        <li>An annual Zomato Gold membership </li>
+                        <li>An annual Hotstar Premium membership </li>
+                        <li>6 months Gaana plus subscription </li>
+                        <li>Rupees 550 instant discount on flights on ixigo </li>
+                        <li>Check out https://www.flipkart.com/plus/all-offers for the entire list. Terms and conditions apply.
+                        </li>
+                    </ul>
+                </p>
+            </div>
+
+            <!-- Content 3 -->
+            <div class="content-3 p-5 pb-0">
+                <h1 class="font-bold text-lg text-gray-500 mb-3">No Cost EMI</h1>
+                <p>In an attempt to make high-end products accessible to all, our No Cost EMI plan enables you to shop with us under EMI, without shelling out any processing fee. Applicable on select mobiles, laptops, large and small appliances, furniture,
+                    electronics and watches, you can now shop without burning a hole in your pocket. If you've been eyeing a product for a long time, chances are it may be up for a no cost EMI. Take a look ASAP! Terms and conditions apply.</p>
+            </div>
+
+            <!-- Content 4 -->
+            <div class="content-4 p-5 pb-0">
+                <h1 class="font-bold text-lg text-gray-500 mb-3">EMI on Debit Cards</h1>
+                <p>Did you know debit card holders account for 79.38 crore in the country, while there are only 3.14 crore credit card holders? After enabling EMI on Credit Cards, in another attempt to make online shopping accessible to everyone, Flipkart
+                    introduces EMI on Debit Cards, empowering you to shop confidently with us without having to worry about pauses in monthly cash flow. At present, we have partnered with Axis Bank, HDFC Bank, State Bank of India and ICICI Bank for this
+                    facility. More power to all our shoppers! Terms and conditions apply.</p>
+            </div>
+
+            <!-- Content 5 -->
+            <div class="content-5 p-5 pb-0">
+                <h1 class="font-bold text-lg text-gray-500 mb-3">Mobile Exchange Offers</h1>
+                <p>Get an instant discount on the phone that you have been eyeing on. Exchange your old mobile for a new one after the Flipkart experts calculate the value of your old phone, provided it is in a working condition without damage to the screen.
+                    If a phone is applicable for an exchange offer, you will see the 'Buy with Exchange' option on the product description of the phone. So, be smart, always opt for an exchange wherever possible. Terms and conditions apply.</p>
+            </div>
+
+            <h1 class="font-bold text-lg text-gray-500 pt-3 pl-5 pb-0">What Can You Buy From Flipkart?</h1>
+
+            <!-- Content 6 -->
+            <div class="content-6 p-5 pb-0 pt-2">
+                <h1 class="font-bold text-lg text-gray-500 mb-3">Mobile Phones</h1>
+                <p>From budget phones to state-of-the-art smartphones, we have a mobile for everybody out there. Whether you're looking for larger, fuller screens, power-packed batteries, blazing-fast processors, beautification apps, high-tech selfie cameras
+                    or just large internal space, we take care of all the essentials. Shop from top brands in the country like Samsung, Apple, Oppo, Xiaomi, Realme, Vivo, and Honor to name a few. Rest assured, you're buying from only the most reliable
+                    names in the market. What's more, with Flipkart's Complete Mobile Protection Plan, you will never again find the need to run around service centres. This plan entails you to a number of post-purchase solutions, starting at as low as
+                    Rupees 99 only! Broken screens, liquid damage to phone, hardware and software glitches, and replacements - the Flipkart Complete Mobile Protection covers a comprehensive range of post-purchase problems, with door-to-door services.</p>
+            </div>
+
+            <!-- Content 7 -->
+            <div class="content-7 p-5 pb-0">
+                <h1 class="font-bold text-lg text-gray-500 mb-3">Electronic Devices and Accessories</h1>
+                <p class="pb-2">When it comes to laptops, we are not far behind. Filter among dozens of super-fast operating systems, hard disk capacity, RAM, lifestyle, screen size and many other criterias for personalized results in a flash. All you students out there,
+                    confused about what laptop to get? Our <span class="font-medium">Back To College</span> Store segregates laptops purpose wise (gaming, browsing and research, project work, entertainment, design, multitasking) with recommendations from
+                    top brands and industry experts, facilitating a shopping experience that is quicker and simpler.</p>
+                <p class="pb-2">Photography lovers, you couldn't land at a better page than ours. Cutting-edge DSLR cameras, ever reliable point-and-shoot cameras, millennial favourite instant cameras or action cameras for adventure junkies: our range of cameras is as
+                    much for beginners as it is for professionals. Canon, Nikon, GoPro, Sony, and Fujifilm are some big names you'll find in our store. Photography lovers, you couldn't land at a better page than ours. Cutting-edge DSLR cameras, ever reliable
+                    point-and-shoot cameras, millennial favourite instant cameras or action cameras for adventure junkies: our range of cameras is as much for beginners as it is for professionals. Canon, Nikon, GoPro, Sony, and Fujifilm are some big names
+                    you'll find in our store.</p>
+                <p>Turn your home into a theatre with a stunning surround sound system. Choose from our elaborate range of Sony home theatres, JBL soundbars and Philips tower speakers for an experience to remember. How about jazzing up your phone with our
+                    quirky designer cases and covers? Our wide-ranging mobile accessories starting from headphones, power banks, memory cards, mobile chargers, to selfie sticks can prove to be ideal travel companions for you and your phone; never again
+                    worry about running out of charge or memory on your next vacation.</p>
+            </div>
+
+            <!-- Content 8 -->
+            <div class="content-8 p-5 pb-0">
+                <h1 class="font-bold text-lg text-gray-500 mb-3">Large Appliances</h1>
+                <p>Sleek TVs, power-saving refrigerators, rapid-cooling ACs, resourceful washing machines - discover everything you need to run a house under one roof. Our Dependable TV and Appliance Store ensures zero transit damage, with a replacement
+                    guarantee if anything goes wrong; delivery and installation as per your convenience and a double warranty (Official Brand Warranty along with an extended Flipkart Warranty) - rest assured, value for money is what is promised and delivered.
+                    Shop from market leaders in the country like Samsung, LG, Whirlpool, Midea, Mi, Vu, Panasonic, Godrej, Sony, Daikin, and Hitachi among many others.</p>
+            </div>
+
+            <!-- Content 9 -->
+            <div class="content-9 p-5 pb-0">
+                <h1 class="font-bold text-lg text-gray-500 mb-3">Small Home Appliances</h1>
+                <p>Find handy and practical home appliances designed to make your life simpler: electric kettles, OTGs, microwave ovens, sandwich makers, hand blenders, coffee makers, and many more other time-saving appliances that are truly crafted for
+                    a quicker lifestyle. Live life king size with these appliances at home.</p>
+            </div>
+
+            <!-- Content 10 -->
+            <div class="content-10 p-5 pb-0">
+                <h1 class="font-bold text-lg text-gray-500 mb-3">Lifestyle</h1>
+                <p>Flipkart,<span class="font-medium">'India ka Fashion Capital'</span> , is your one-stop fashion destination for anything and everything you need to look good. Our exhaustive range of Western and Indian wear, summer and winter clothing,
+                    formal and casual footwear, bridal and artificial jewellery, long-lasting make-up, grooming tools and accessories are sure to sweep you off your feet. Shop from crowd favourites like Vero Moda, Forever 21, Only, Arrow, Woodland, Nike,
+                    Puma, Revlon, Mac, and Sephora among dozens of other top-of-the-ladder names. From summer staple maxi dresses, no-nonsense cigarette pants, traditional Bandhani kurtis to street-smart biker jackets, you can rely on us for a wardrobe
+                    that is up to date. Explore our in-house brands like Metronaut, Anmi, and Denizen, to name a few, for carefully curated designs that are the talk of the town. Get ready to be spoiled for choice.Festivals, office get-togethers, weddings,
+                    brunches, or nightwear - Flipkart will have your back each time.</p>
+            </div>
+
+            <!-- Content 11 -->
+            <div class="content-11 p-5 pb-0">
+                <h1 class="font-bold text-lg text-gray-500 mb-3">Home and Furniture</h1>
+                <p>Moving to a new place is never easy, especially if you're buying new furniture. Beds, sofa sets, dining tables, wardrobes, and TV units - it's not easy to set up everything again. With the hundreds of options thrown at you, the ride could
+                    be overwhelming. What place is reliable, what furniture will stand the test of time? These are questions you must ask before you choose a store. Well, our Durability Certified Furniture Store has not only curated a range of furniture
+                    keeping in mind the modern Indian consumer but furniture that comes with a lab certification, ensuring they last you for up to 10 years. Yes, all our furniture has gone through 35 stability and load tests so that you receive only the
+                    best-quality furniture. Be FurniSure, always. Names to look out for are Nilkamal, Godrej Interio, Urban Ladder, HomeTown, Durian and Perfect Homes.</p>
+            </div>
+
+            <!-- Content 12 -->
+            <div class="content-12 p-5 pb-0">
+                <h1 class="font-bold text-lg text-gray-500 mb-3">Baby and Kids</h1>
+                <p>Your kids deserve only the best. From bodysuits, booties, diapers to strollers, if you're an expecting mother or a new mother, you will find everything you need to set sail on a smooth parenting journey with the help of our baby care collection.
+                    When it comes to safety, hygiene and comfort, you can rely on us without a second thought. Huggies, Pampers, MamyPoko, and Johnson & Johnson: we host only the most-trusted names in the business for your baby.</p>
+            </div>
+
+            <!-- Content 13 -->
+            <div class="content-13 p-5 pb-0">
+                <h1 class="font-bold text-lg text-gray-500 mb-3">Books, Sports and Games</h1>
+                <p>Work hard and no play? We don't believe in that. Get access to best-selling fiction and non-fiction books by your favourite authors, thrilling English and Indian blockbusters, most-wanted gaming consoles, and a tempting range of fitness
+                    and sports gadgets and equipment bound to inspire you to get moving.</p>
+            </div>
+
+            <!-- Content 14 -->
+            <div class="content-14 p-5">
+                <h1 class="font-bold text-lg text-gray-500 mb-3">Grocery/Supermart</h1>
+                <p>Launching into the grocery vertical, Flipkart introduces Supermart that is out to bring everyday essentials close to you. From pulses, spices, dairy, personal and sanitary care, breakfast essentials, health drinks, spreads, ready to cook,
+                    grooming to cleaning agents, we are happy to present everything you need to run a house. Now buy Grocery products for as low as 1 Rupee only - our 1 Rupee Store presents new products every day for a nominal price of 1 Rupee only. Terms
+                    and conditions apply.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Content -->
+
+    <footer>
+        <!-- Footer Upper Content -->
+        <div class="footer-upper flex">
+            <div class="footer-u-left-content h-80 text-white text-sm font-medium flex pl-20 pt-16">
+                <div class="footer-u-col">
+                    <ul class="mr-10">
+                        <li class="text-gray-500 mb-5">ABOUT</li>
+                        <li class="mb-2 hover:underline cursor-pointer">Contact Us</li>
+                        <li class="mb-2 hover:underline cursor-pointer">About Us</li>
+                        <li class="mb-2 hover:underline cursor-pointer">Careers</li>
+                        <li class="mb-2 hover:underline cursor-pointer">Flipkart Stories</li>
+                        <li class="mb-2 hover:underline cursor-pointer">Press</li>
+                        <li class="mb-2 hover:underline cursor-pointer">Flipkart Wholesale</li>
+                        <li class="mb-2 hover:underline cursor-pointer">Corporate Information</li>
+                    </ul>
+                </div>
+                <div class="footer-u-col">
+                    <ul class="mr-10">
+                        <li class="text-gray-500 mb-5">HELP</li>
+                        <li class="mb-2 hover:underline cursor-pointer">Payments</li>
+                        <li class="mb-2 hover:underline cursor-pointer">Shipping</li>
+                        <li class="mb-2 hover:underline cursor-pointer">Cancellation & Returns</li>
+                        <li class="mb-2 hover:underline cursor-pointer">FAQ</li>
+                        <li class="mb-2 hover:underline cursor-pointer">Report Infringement</li>
+                    </ul>
+                </div>
+                <div class="footer-u-col">
+                    <ul class="mr-10">
+                        <li class="text-gray-500 mb-5">POLICY</li>
+                        <li class="mb-2 hover:underline cursor-pointer">Return Policy</li>
+                        <li class="mb-2 hover:underline cursor-pointer">Terms Of Use</li>
+                        <li class="mb-2 hover:underline cursor-pointer">Security</li>
+                        <li class="mb-2 hover:underline cursor-pointer">Privacy</li>
+                        <li class="mb-2 hover:underline cursor-pointer">Sitemap</li>
+                        <li class="mb-2 hover:underline cursor-pointer">EPR Compilance</li>
+                    </ul>
+                </div>
+                <div class="footer-u-col mr-28">
+                    <ul class="">
+                        <li class="text-gray-500 mb-5">SOCIAL</li>
+                        <li class="mb-2 hover:underline cursor-pointer">Facebook</li>
+                        <li class="mb-2 hover:underline cursor-pointer">Twitter</li>
+                        <li class="mb-2 hover:underline cursor-pointer">YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-l mt-16 mb-20 border-gray-500"></div>
+            <div class="footer-u-right flex justify-center pt-16  pl-5">
+
+                <!-- Mail Us Details-->
+                <div class="footer-u-right-content-1 mr-12">
+                    <h1 class="text-gray-500 text-sm font-medium mb-5">Mail Us:</h1>
+                    <p class="text-white text-sm font-medium">Flipkart Internet Private Limited,<br> Buildings Alyssa, Begonia & <br> Clove Embassy Tech Village, <br> Outer Ring Road,<br> Devarabeesanahalli Village,
+                        <br> Bengaluru, 560103, <br> Karnataka, India
+                    </p>
+                </div>
+
+                <!-- Address Content -->
+                <div class="footer-u-right-content-2">
+                    <h1 class="text-gray-500 text-sm font-medium mb-5">Registered Office Address:</h1>
+                    <p class="text-white text-sm font-medium">Flipkart Internet Private Limited,<br> Buildings Alyssa, Begonia & <br> Clove Embassy Tech Village, <br> Outer Ring Road, Devarabeesanahalli Village,
+                        <br> Bengaluru, 560103, <br> Karnataka, India <br> CIN : U51109KA2012PTC066107 <br> Telephone:
+                        <span class="text-blue-500 cursor-pointer">1800 202 9898</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Bottom Content -->
+        <div class="footer-bottom">
+            <div class="footer-b-content w-full text-white text-sm font-medium flex items-center border-t border-gray-500">
+                <ul class="flex items-center p-4 ml-5">
+                    <li class="mr-6 cursor-pointer"><i class="fas fa-briefcase text-lg"></i>Sell On Flipkart</li>
+                    <li class="mr-6 cursor-pointer"><i class="fas fa-star"></i>Advertise</li>
+                    <li class="mr-6 cursor-pointer"><i class="fas fa-gift text-lg"></i>Gift Cards</li>
+                    <li class="mr-6 cursor-pointer"><i class="far fa-question-circle text-lg"></i>Help Center</li>
+                </ul>
+                <h1 class="text-sm">© 2007-2021 Flipkart.com</h1>
+
+                <!-- Payment Cards -->
+                <div>
+                    <img class="ml-40" src="https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/payment-method_7934bc.svg" alt="payment-cards">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
