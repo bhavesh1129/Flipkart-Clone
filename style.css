@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;600&display=swap');
+.dropdown-content a {
+    padding: 10px 10px;
+    display: block;
+    border-bottom: 1px solid rgb(235, 235, 235);
+    width: 17vw;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(243, 243, 243);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.far,
+.fas,
+.fab {
+    padding: 10px;
+    color: #047BD5;
+}
+
+.top-offer-row {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.price-cards {
+    font-family: 'Fira Sans', sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.footer-upper,
+.footer-b-content {
+    background-color: #172337;
+}
+
+.footer-b-content i {
+    color: gold;
+}
